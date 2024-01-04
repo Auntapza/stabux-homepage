@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: inherit;
   outline: 0;
+  font-family: Sodo-Sans;
 }
 
 a {
@@ -16,4 +17,20 @@ button {
 
 .container {
   width: 70%;
+}
+
+@font-face {
+  font-family: Sodo-Sans;
+  src: url('./assets/font/SoDoSans-Light.woff2');
+  font-weight: 300;
+}
+@font-face {
+  font-family: Sodo-Sans;
+  src: url('./assets/font/SoDoSans-Regular.woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: Sodo-Sans;
+  src: url('./assets/font/SoDoSans-SemiBold.woff2');
+  font-weight: 500;
 }

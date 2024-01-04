@@ -24,7 +24,7 @@ let navbar = () => {
                         </a>
                         <a href="">
                             <i class="fa-solid fa-flag"></i>
-                            Thai
+                            ไทย
                         </a>
                     </div>
                 </div>
