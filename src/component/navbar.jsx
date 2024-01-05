@@ -23,7 +23,7 @@ let navbar = () => {
                             Find a Store
                         </a>
                         <a href="">
-                            <i class="fa-solid fa-flag"></i>
+                            <i className="fa-solid fa-flag"></i>
                             ไทย
                         </a>
                     </div>

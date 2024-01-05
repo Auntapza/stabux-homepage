@@ -76,3 +76,90 @@ nav {
     }
 }
 
+/***************** Footer style *****************/
+footer {
+  margin-top: 5em;
+  background: #f7f7f7;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    padding: 2rem 0 0 0 ;
+  }
+  .footer-top .links{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    > div {
+      h1 {
+        font-size: unset;
+        text-transform: uppercase;
+      }
+      a {
+        color: #00000088;
+        display: block;
+        &:hover {
+          color: #000000;
+        }
+      }
+    }
+
+    .country {
+      display: flex;
+      gap: 1.6rem;
+      > div {
+        cursor: pointer;
+        color: #00000088;
+
+        &:hover {
+          color: #000000;
+        }
+        i {
+          margin-right: 10px;
+          color: green;
+        }
+      }
+    }
+  }
+}
+
+.social {
+  border-top: 1px solid #00000022;
+  padding: 1rem 0;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  .container {
+    display: flex;
+    justify-content: end;
+    > img {
+      height: 36px;
+      margin: 0 .4rem;
+    }
+  }
+}
+
+.footer-bottom {
+  background: #5b5b5b;
+  height: 60px;
+  width: 100%;
+  color: #bfbfbf;
+  display: flex;
+  justify-content: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .8em;
+
+    .links {
+      display: flex;
+      gap: 1rem;
+      a:hover {
+        color: #f7f7f7;
+      }
+    }
+  }
+}
