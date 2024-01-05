@@ -1,0 +1,123 @@
+:root {
+    --image-tranform: 0%;
+}
+
+.slider-content {
+    display: flex;
+    transform: translateX(var(--image-tranform));
+    transition: all .25s ease-out;
+}
+
+.slider {
+    position: relative;
+    button {
+        border: 2px solid black;
+        padding: .4rem .7rem;
+        border-radius: 50%;
+        background: transparent;
+        outline: 0;
+        font-size: 1em;
+        position: absolute;
+        z-index: 99;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        &.privious {
+            left: 1rem;
+            top: 50%;
+        }
+        &.follow {
+            right: 1rem;
+            top: 50%;
+        }
+    }
+}
+
+.slider-content-1 {
+    display: flex;
+    background-image: url('../../assets/Winter24_Digital_Web_Banner_BG.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 100%;
+    object-fit: contain;
+    padding: 5rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 65%;
+    }
+}
+
+.slider-content-2 {
+    min-width: 100%;
+    position: relative;
+    background-image: url('../../assets/bg-Web-Banner-and-Landin-Page.webp');
+    background-size: cover;
+    background-position: center;
+
+    .logoImg {
+        position: absolute;
+        top: 3rem;
+        right: 1rem;
+    }
+    > div {
+        display: flex;
+        padding: 0rem 5rem;
+        justify-content: start;
+        align-items: center;
+        height: 100%;
+        > img {
+            width: 40%;
+        }
+        > img:last-child {
+            width: 50%;
+            position: relative;
+            left: 7em;
+        }
+    }
+
+    .star {
+        position: absolute;
+        &.top {
+            top: 20%;
+            right: 35%;
+        }
+        &.bottom {
+            bottom: 0;
+            right: 10%;
+            width: 250px;
+        }
+    }
+}
+
+.sliderTab {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    display: flex;
+    gap: 1rem;
+
+    > .circle {
+        background: #6363639c;
+        width: 15px;
+        height: 15px;
+        display: block;
+        border-radius: 50%;
+        transition: all .25s;
+        cursor: pointer;
+
+        &.active {
+            background-color: #3b3b3b;
+        }
+    }
+}

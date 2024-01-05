@@ -7,6 +7,10 @@
   font-family: Sodo-Sans;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -17,6 +21,12 @@ button {
 
 .container {
   width: 70%;
+}
+
+@media screen and (max-width: 1500px) {
+  .container {
+    width: 95%;
+  }
 }
 
 @font-face {
