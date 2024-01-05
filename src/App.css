@@ -76,6 +76,32 @@ nav {
     }
 }
 
+.hambergerBtn {
+  display: none;
+  flex-direction: column;
+  gap: .25rem;
+  cursor: pointer;
+  span {
+    background-color: #000000;
+    width: 25px;
+    height: 2px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  nav {
+    .nav-item, .right{
+      display: none !important;
+    }
+  }
+
+  .hambergerBtn {
+    display: flex;
+  }
+  
+}
+
 /***************** Footer style *****************/
 footer {
   margin-top: 5em;

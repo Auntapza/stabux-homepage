@@ -59,6 +59,9 @@
     img:first-child {
         width: 20%;
     }
+    img:last-child {
+        width: clamp(30%, 75%, 100%);
+    }
 }
 
 .slider-content-2 {

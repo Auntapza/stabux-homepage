@@ -27,6 +27,11 @@ let navbar = () => {
                             ไทย
                         </a>
                     </div>
+                    <div className="hambergerBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </nav>
         </>
