@@ -2,6 +2,11 @@
     --image-tranform: 0%;
 }
 
+.homepage {
+    display: flex;
+    justify-content: center;
+}
+
 .slider-content {
     display: flex;
     transform: translateX(var(--image-tranform));
@@ -119,5 +124,53 @@
         &.active {
             background-color: #3b3b3b;
         }
+    }
+}
+
+
+
+/************** hompage stlye ****************/
+
+.suggestMenu {
+    margin: 1rem 0;
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    
+    .catalog {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 30px;
+        > div {
+            cursor: pointer;
+            overflow: hidden;
+            > img {
+                transition: all .5s ease;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            &:hover {
+                > img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .coffee {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+        }
+    }
+}
+
+.banner {
+    img {
+        width: 100%;
     }
 }
