@@ -10,7 +10,7 @@
 .slider-content {
     display: flex;
     transform: translateX(var(--image-tranform));
-    transition: all .25s ease-out;
+    transition: all .25s;
 }
 
 .slider {

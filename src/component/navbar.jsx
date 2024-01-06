@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/starbucks_corporation_logo.png"
 
-let navbar = () => {
+let navbar = (scrollVal) => {
+
     return (
         <>
-            <nav>
+            <nav className={scrollVal.scrollVal >= 120 ? "scroll" : ""}>
                 <div className="container">
                     <div className="left">
                         <img src={logo} alt="" />
