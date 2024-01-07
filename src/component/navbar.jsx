@@ -1,21 +1,23 @@
-import React, { useState } from "react";
 import logo from "../assets/starbucks_corporation_logo.png"
+import { Link } from "react-router-dom";
 
-let navbar = (scrollVal) => {
+let navbar = (prop) => {
 
     return (
         <>
-            <nav className={scrollVal.scrollVal >= 120 ? "scroll" : ""}>
+            <nav className={prop.scrollVal > 200 ? "scroll" : ""}>
                 <div className="container">
                     <div className="left">
-                        <img src={logo} alt="" />
+                        <Link to={'/'}><img src={logo} alt=""/></Link>
                         <div className="nav-item">
-                            <ul>
-                                <li>coffee tea at home</li>
-                                <li>menu</li>
-                                <li>merchandice</li>
-                                <li>starbucks rewards</li>
-                            </ul>
+                                <ul>
+                                    <Link to={'/coffee'}>
+                                        <li>coffee tea at home</li>
+                                    </Link>
+                                    <li>menu</li>
+                                    <li>merchandice</li>
+                                    <li>starbucks rewards</li>
+                                </ul>
                         </div>
                     </div>
                     <div className="right">

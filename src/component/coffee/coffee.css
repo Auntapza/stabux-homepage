@@ -1,0 +1,130 @@
+.coffee {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.search-product {
+    display: flex;
+    align-items: center;
+    padding: 2em 5em;
+    gap: 5em;
+    border-bottom: 1px solid gray;
+    
+    .fillter {
+        a {
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            text-decoration: underline;
+            gap: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+
+    form {
+        display: flex;
+        width: 100%;
+        input {
+            padding: 1rem 0.4rem;
+            outline: 0;
+            border: 1px solid #00000033;
+            box-shadow: inset 0px 0px 3px 0px #00000033;
+            width: clamp(100px, 50%, 100%);
+
+            &:hover {
+                box-shadow: unset;
+            }
+        }
+
+        button {
+            width: 40px;
+            border: 1px solid #00000033;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .search-product {
+        flex-direction: column-reverse;
+        gap: 1rem;
+        padding: 0;
+        border: unset;
+
+        form {
+            input {
+                width: 100%;
+            }
+        }
+
+        .fillter {
+            border-top: 1px solid #00000033;
+            padding: 2rem 1rem;
+            width: 100%;
+
+            a {
+                justify-content: start;
+            }
+        }
+    }
+}
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    height: 0;
+    overflow: hidden;
+    transition: height .25s;
+
+    .list {
+        margin-top: 1rem;
+        display: grid;
+        > h1 {
+            font-size: 1.1em;
+            text-shadow: 0px 0px 1px 1px #00000033;
+        }
+    }
+}
+
+.list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    > div {
+        gap: 1rem;
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+        input {
+            width: 20px;
+            height: 20px;
+        }
+        span {
+            font-size: .7em;
+        }
+    }
+}
+
+.filter-list.active {
+    height: 160px;
+}
+
+@media (max-width: 480px) {
+    .filter-list {
+        flex-direction: column;
+    }
+    .list {
+        grid-template-columns: repeat(auto, 1fr);
+    }
+    .filter-list.active {
+        height: 500px;
+    }
+    .list-items {
+        flex-direction: row;
+        gap: .5rem;
+        flex-wrap: wrap;
+    }
+}
