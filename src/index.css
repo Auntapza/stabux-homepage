@@ -23,6 +23,11 @@ button {
   width: 70%;
 }
 
+:has(.container):not(body, #root) {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 1500px) {
   .container {
     width: 95%;

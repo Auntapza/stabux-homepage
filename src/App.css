@@ -11,8 +11,6 @@
 }
 
 nav {
-  display: flex;
-  justify-content: center;
   padding: .3rem 0;
   box-shadow: 0px -2px 5px 5px #00000022;
   border-bottom: .3px solid #80808055;
@@ -126,8 +124,6 @@ footer {
   margin-top: 5em;
   background: #f7f7f7;
   width: 100%;
-  display: flex;
-  justify-content: center;
 
   .container {
     padding: 2rem 0 0 0 ;

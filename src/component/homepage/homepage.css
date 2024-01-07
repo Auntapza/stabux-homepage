@@ -2,11 +2,6 @@
     --image-tranform: 0%;
 }
 
-.homepage {
-    display: flex;
-    justify-content: center;
-}
-
 .slider-content {
     display: flex;
     transform: translateX(var(--image-tranform));
