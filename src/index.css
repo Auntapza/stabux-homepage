@@ -1,4 +1,4 @@
-* {
+no* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,7 +20,8 @@ button {
 }
 
 .container {
-  width: 70%;
+  max-width: 1500px;
+  width: 100%;
 }
 
 :has(.container):not(body, #root) {
